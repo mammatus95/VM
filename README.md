@@ -59,7 +59,7 @@ qemu-img create testvm.img 2G
 ```
 Installation von CD-Image:
 ```bash
-qemu-system-x86_64 -enable-kvm -hda testvm.img -cdrom <path>/img/ubuntu-20.10-desktop-amd64.iso -boot d -m 1024 
+qemu-system-x86_64 -enable-kvm -hda testvm.img -cdrom <path>/iso/ubuntu-20.10-desktop-amd64.iso -boot d -m 1024 
 ```
 
 Tastenkombination von QEMU:
@@ -75,4 +75,11 @@ https://fedoraproject.org/de/workstation/download
 
 ### Ubuntu
 https://ubuntu.com/download
+
+### FreeBSD
+https://www.freebsd.org/de/
+
+### Windows10
+https://www.microsoft.com/de-de/software-download/windows10ISO
+
 
