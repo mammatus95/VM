@@ -53,9 +53,20 @@ sudo usermod -aG libvirt $USER
 sudo virt-manager
 ```
 ### Start with the command line:
+Virtuelle Festplatte einrichten:
+```bash
+qemu-img create testvm.img 2G 
+```
+Installation von CD-Image:
 ```bash
 qemu-system-x86_64 -enable-kvm -hda testvm.img -cdrom <path>/img/ubuntu-20.10-desktop-amd64.iso -boot d -m 1024 
 ```
+
+Tastenkombination von QEMU:
+- Strg + Alt	: Maus aus dem QEMU-Fenster befreien
+- Strg + Alt + 2	: vom Gast in den QEMU-Monitor wechseln
+- Strg + Alt + 1	: vom QEMU-Monitor ins Gast-Betriebssystem wechseln
+- Strg + Alt + F	: zwischen Fenster- und Vollbildmodus wechseln
 
 ## Download sources for ISOs
 
